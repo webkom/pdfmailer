@@ -32,22 +32,15 @@ The steps above will result in a folder called `pdfs` with all the pfds in them,
 
 ## Run
 
-The script takes -3- command line args
+`yarn start` takes the following args/flags.
 
-`--from` or `F` = Organisation
-
-`--occation` or `O` = Name of event this pdf is connected to
-
-`--from_email` or `E` = fromEmail@domain.com>
-
-`--pdfs` or `P` = path to folder with pdf files
-
-`--emails` or `M` = path to file with emails
-
-```sh
-# Example (with pfds in ./input/pdfs and email file at /input/emails)
-$ yarn start --from admin@abakus.no --pdfs input/pdfs --emails input/emails
-```
+| Argument       | Flag | Value                       |
+| -------------- | ---- | --------------------------- |
+| `--from`       | `-F` | Name of the sender/org      |
+| `--ooccation`  | `-O` | Reason/Event for sending    |
+| `--from_email` | `-E` | Mail of the senders account |
+| `--pdfs`       | `-P` | Path to folder with pdfs    |
+| `--emails`     | `-M` | Path to file with emails    |
 
 ## Check parsing and continue
 
