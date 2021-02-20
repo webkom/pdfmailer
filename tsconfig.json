@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2015",
+    "outDir": "build/",
+    "module": "commonjs",
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
