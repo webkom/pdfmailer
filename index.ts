@@ -84,7 +84,7 @@ if (emails.length > pdfs.length)
 
 // Zip mails and path to PDF together into target objects
 const targets = emails.map((e: string, i: number) => ({
-  email: e,
+  email: e.trim(),
   path: pdfs[i],
 }));
 
