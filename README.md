@@ -1,6 +1,18 @@
 # Send pdfs to multiple users script
 
-## Setup
+## Development
+
+**[DISCLAIMER]** This script was tossed together and I don't know if this runs on any other config then
+mine! You are happy to try and create an issue/PR with dev fixes. I kinda piggy backed on a lot of
+my global linters/prettier/configs. I tried adding most of it into the `package.json` in order
+for others to run it.
+
+```sh
+$ yarn
+$ tsc --watch
+```
+
+## Production
 
 ```sh
 # Get deps and build .js from .ts
@@ -44,16 +56,14 @@ The steps above will result in a folder called `pdfs` with all the pfds in them,
 
 ## Check parsing and continue
 
-The script will simple fold one email with one pdf
+The script will simply **merge/fold/zip** one email with one pdf.
 
 1. If `emails > pfds` it will throw an error
 2. If `emails < pdfs` it will simple not use the rest of the pdfs
 
 ## Example
 
-When starting the script it will output as shown below, and ask you to continue
-
-`yes` or `Y` will start to send emails
+When starting the script it will will show the targets and ask for `Y` or `yes` to continue.
 
 ```sh
 ❯ yarn start \
